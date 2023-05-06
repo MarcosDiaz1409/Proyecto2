@@ -20,3 +20,12 @@ CREATE (ee:Película {Nombre: ¨X-Men¨ , Año: ¨2011¨ , Género: ¨Acción/Av
 CREATE (ee:Película {Nombre: ¨It¨ , Año: ¨2019¨ , Género: ¨Sobrenatural/Suspenso¨})
 CREATE (ee:Película {Nombre: ¨Las crónicas de Narnia¨ , Año: ¨2005¨ , Género: ¨Fantasía/Aventura¨})
 CREATE (ee:Película {Nombre: ¨Glass¨ , Año: ¨2019¨ , Género: ¨Suspenso/Drama¨})
+
+CREATE (ee:Actor {Nombre: ¨Octavia Spencer¨ , País: ¨Estados Unidos¨ , Edad: ¨52 años¨ , Fecha de Nacimiento: "25/05/1970", Estatura: ¨1.57 m¨})
+CREATE (ee:Película {Nombre: ¨Historias cruzadas¨ , Año: ¨2011¨ , Género: ¨Drama/Cine histórico¨})
+CREATE (ee:Película {Nombre: ¨Talentos ocultos¨ , Año: ¨2016¨ , Género: ¨Drama/Ficción histórica¨})
+CREATE (ee:Película {Nombre: ¨Ma¨ , Año: ¨2019¨ , Género: ¨Suspenso/Terror psicológico¨})
+CREATE (ee:Película {Nombre: ¨La Cabaña¨ , Año: ¨2017¨ , Género: ¨Drama/Fantasía¨})
+CREATE (ee:Película {Nombre: ¨Un don excepcional¨ , Año: ¨2017¨ , Género: ¨Drama/Comedia dramática¨})
+CREATE (ee:Película {Nombre: ¨Insurgente¨ , Año: ¨2015¨ , Género: ¨Ciencia ficción/Acción¨})
+CREATE (ee:Película {Nombre: ¨Donde el corazón te lleva¨ , Año: ¨2014¨ , Género: ¨Drama¨})
