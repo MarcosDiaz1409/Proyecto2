@@ -29,3 +29,11 @@ CREATE (ee:Película {Nombre: ¨La Cabaña¨ , Año: ¨2017¨ , Género: ¨Drama
 CREATE (ee:Película {Nombre: ¨Un don excepcional¨ , Año: ¨2017¨ , Género: ¨Drama/Comedia dramática¨})
 CREATE (ee:Película {Nombre: ¨Insurgente¨ , Año: ¨2015¨ , Género: ¨Ciencia ficción/Acción¨})
 CREATE (ee:Película {Nombre: ¨Donde el corazón te lleva¨ , Año: ¨2014¨ , Género: ¨Drama¨})
+
+CREATE (ee:Actor {Nombre: ¨Vin Diesel¨ , País: ¨Estados Unidos¨ , Edad: ¨55 años¨ , Fecha de Nacimiento: "18/07/1967", Estatura: ¨1.82 m¨})
+CREATE (ee:Película {Nombre: ¨Rápidos y furiosos 7¨ , Año: ¨2015¨ , Género: ¨Acción/Aventura¨})
+CREATE (ee:Película {Nombre: ¨xXx: reactivado¨ , Año: ¨2017¨ , Género: ¨Acción/Suspenso¨})
+CREATE (ee:Película {Nombre: ¨Riddick¨ , Año: ¨2013¨ , Género: ¨Ciencia ficción/Ciencia ficción¨})
+CREATE (ee:Película {Nombre: ¨Guardianes de la Galaxia¨ , Año: ¨2014¨ , Género: ¨Ciencia ficción/Acción¨})
+CREATE (ee:Película {Nombre: ¨Niñera a prueba de balas¨ , Año: ¨2005¨ , Género: ¨Comedia/Infantil¨})
+CREATE (ee:Película {Nombre: ¨Avengers¨ , Año: ¨2018¨ , Género: ¨Acción/Ciencia ficción¨})
