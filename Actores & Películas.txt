@@ -46,3 +46,12 @@ CREATE (ee:Película {Nombre: ¨Moana¨ , Año: ¨2016¨ , Género: ¨Infantil/M
 CREATE (ee:Película {Nombre: ¨Guardianes de la bahía¨ , Año: ¨2019¨ , Género: ¨Comedia/Acción¨})
 CREATE (ee:Película {Nombre: ¨Terremoto: la falla de San Andrés¨ , Año: ¨2015¨ , Género: ¨Acción/Suspenso¨})
 CREATE (ee:Película {Nombre: ¨Rascacielos¨ , Año: ¨2018¨ , Género: ¨Acción/Suspenso¨})
+
+CREATE (ee:Actor {Nombre: ¨Adam Sandler¨ , País: ¨Estados Unidos¨ , Edad: ¨56 años¨ , Fecha de Nacimiento: "09/09/1966", Estatura: ¨1.77 m¨})
+CREATE (ee:Película {Nombre: ¨Son como niños¨ , Año: ¨2010¨ , Género: ¨Comedia/Buddy¨})
+CREATE (ee:Película {Nombre: ¨Misterio a bordo¨ , Año: ¨2019¨ , Género: ¨Misterio/Comedia¨})
+CREATE (ee:Película {Nombre: ¨Una esposa de mentira¨ , Año: ¨2011¨ , Género: ¨Comedia/Romance¨})
+CREATE (ee:Película {Nombre: ¨Happy Gilmore¨ , Año: ¨1996¨ , Género: ¨Comedia/Romance¨})
+CREATE (ee:Película {Nombre: ¨Como si fuera la primera vez¨ , Año: ¨2004¨ , Género: ¨Romance/Comedia¨})
+CREATE (ee:Película {Nombre: ¨Click: Perdiendo el control¨ , Año: ¨2006¨ , Género: ¨Comedia/Fantasía¨})
+CREATE (ee:Película {Nombre: ¨Jack y Jill¨ , Año: ¨2011¨ , Género: ¨Comedia¨})
