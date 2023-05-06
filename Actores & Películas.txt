@@ -12,3 +12,11 @@ CREATE (ee:Película {Nombre: ¨Espejito espejito¨ , Año: ¨2012¨ , Género: 
 CREATE (ee:Película {Nombre: ¨Un sueño posible¨ , Año: ¨2009¨ , Género: ¨Deportes/Drama¨})
 CREATE (ee:Película {Nombre: ¨Los imprevistos del amor¨ , Año: ¨2014¨ , Género: ¨Romance/Comedia¨})
 CREATE (ee:Película {Nombre: ¨Un lugar para el amor¨ , Año: ¨2012¨ , Género: ¨Romance/Drama¨})
+
+CREATE (ee:Actor {Nombre: ¨James Mcavoy¨ , País: ¨Reino Unido¨ , Edad: ¨44 años¨ , Fecha de Nacimiento: "21/04/1979", Estatura: ¨1.70 m¨})
+CREATE (ee:Película {Nombre: ¨Fragmentado¨ , Año: ¨2016¨ , Género: ¨Suspenso/Terror¨})
+CREATE (ee:Película {Nombre: ¨Expiación, deseo y pecado¨ , Año: ¨2007¨ , Género: ¨Romance/Bélico¨})
+CREATE (ee:Película {Nombre: ¨X-Men¨ , Año: ¨2011¨ , Género: ¨Acción/Aventura¨})
+CREATE (ee:Película {Nombre: ¨It¨ , Año: ¨2019¨ , Género: ¨Sobrenatural/Suspenso¨})
+CREATE (ee:Película {Nombre: ¨Las crónicas de Narnia¨ , Año: ¨2005¨ , Género: ¨Fantasía/Aventura¨})
+CREATE (ee:Película {Nombre: ¨Glass¨ , Año: ¨2019¨ , Género: ¨Suspenso/Drama¨})
