@@ -37,3 +37,12 @@ CREATE (ee:Película {Nombre: ¨Riddick¨ , Año: ¨2013¨ , Género: ¨Ciencia 
 CREATE (ee:Película {Nombre: ¨Guardianes de la Galaxia¨ , Año: ¨2014¨ , Género: ¨Ciencia ficción/Acción¨})
 CREATE (ee:Película {Nombre: ¨Niñera a prueba de balas¨ , Año: ¨2005¨ , Género: ¨Comedia/Infantil¨})
 CREATE (ee:Película {Nombre: ¨Avengers¨ , Año: ¨2018¨ , Género: ¨Acción/Ciencia ficción¨})
+
+CREATE (ee:Actor {Nombre: ¨Dwayne Jhonson¨ , País: ¨Estados Unidos¨ , Edad: ¨51 años¨ , Fecha de Nacimiento: "02/05/1972", Estatura: ¨1.96 m¨})
+CREATE (ee:Película {Nombre: ¨Black Adam¨ , Año: ¨2022¨ , Género: ¨Acción/Aventura¨})
+CREATE (ee:Película {Nombre: ¨Jumanji¨ , Año: ¨2017¨ , Género: ¨Aventura/Comedia¨})
+CREATE (ee:Película {Nombre: ¨Rápidos y furiosos¨ , Año: ¨2019¨ , Género: ¨Acción/Buddy cop¨})
+CREATE (ee:Película {Nombre: ¨Moana¨ , Año: ¨2016¨ , Género: ¨Infantil/Musical¨})
+CREATE (ee:Película {Nombre: ¨Guardianes de la bahía¨ , Año: ¨2019¨ , Género: ¨Comedia/Acción¨})
+CREATE (ee:Película {Nombre: ¨Terremoto: la falla de San Andrés¨ , Año: ¨2015¨ , Género: ¨Acción/Suspenso¨})
+CREATE (ee:Película {Nombre: ¨Rascacielos¨ , Año: ¨2018¨ , Género: ¨Acción/Suspenso¨})
