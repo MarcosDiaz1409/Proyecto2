@@ -1,5 +1,5 @@
 CREATE (ee:Actor {Nombre: ¨Meryl Streep¨ , País: ¨Estados Unidos¨ , Edad: ¨73 años¨ , Fecha de Nacimiento: "22/06/1949", Estatura: ¨1.68 m¨})
-CREATE (ee:Película {Nombre: ¨El diablo viste a la moda¨ , Año: ¨2006¨ , Género: ¨Comedia/Drama¨})
+CREATE (ee:Película {Nombre: 'El diablo viste a la moda' , Año: '2006' , Género: 'Comedia/Drama'})
 CREATE (ee:Película {Nombre: ¨Mamma Mia!¨ , Año: ¨2018¨ , Género: ¨Musical/Comedia¨})
 CREATE (ee:Película {Nombre: ¨Enamorándome de mi Ex¨ , Año: ¨2009¨ , Género: ¨Romance/Comedia¨})
 CREATE (ee:Película {Nombre: ¨No miren arriba¨ , Año: ¨2021¨ , Género: ¨Comedia/Catástrofe¨})
@@ -63,3 +63,12 @@ CREATE (ee:Película {Nombre: ¨El joven manos de tijera ¨ , Año: ¨1990¨ , G
 CREATE (ee:Película {Nombre: ¨Animales fantásticos ¨ , Año: ¨2016¨ , Género: ¨Fantasía/Aventura¨})
 CREATE (ee:Película {Nombre: ¨Alicia en el país de las maravillas¨ , Año: ¨2010¨ , Género: ¨Fantasía/Aventura¨})
 CREATE (ee:Película {Nombre: ¨Sombras tenebrosas¨ , Año: ¨2012¨ , Género: ¨Fantasía/Comedia¨})
+
+CREATE (ee:Actor {Nombre: ¨Anne Hathaway¨ , País: ¨Estados Unidos¨ , Edad: ¨40 años¨ , Fecha de Nacimiento: "12/10/1982" , Estatura: ¨1.73 m¨})
+CREATE (ee:Película {Nombre: ¨El diablo viste a la moda¨ , Año: ¨2006¨ , Género: ¨Comedia/Drama ¨})
+CREATE (ee:Película {Nombre: ¨El diario de la princesa¨ , Año: ¨2001¨ , Género: ¨Comedia/Infantil¨})
+CREATE (ee:Película {Nombre: ¨De amor y otras adicciones¨ , Año: ¨2010¨ , Género: ¨Romance/Comedia¨})
+CREATE (ee:Película {Nombre: ¨Interestelar¨ , Año: ¨2014¨ , Género: ¨Ciencia ficción/Aventura ¨})
+CREATE (ee:Película {Nombre: ¨Alicia en el país de las maravillas¨ , Año: ¨2010¨ , Género: ¨Fantasía/Aventura¨})
+CREATE (ee:Película {Nombre: ¨El diario de la princesa ¨ , Año: ¨2004¨ , Género: ¨Romance/Comedia¨})
+
