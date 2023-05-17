@@ -72,6 +72,12 @@ CREATE (ee:Pelicula {Nombre: ´Dora y la ciudad perdida´ , Año: ´2019´ , Gen
 CREATE (ee:Pelicula {Nombre: ´Milagros del cielo´ , Año: ´2016´ , Genero: ´Drama/Infantil ´})
 CREATE (ee:Pelicula {Nombre: ´Shrek´ , Año: ´2001´ , Genero: ´Comedia/Fantasia´})
 
+CREATE (ee:Actor {Nombre: ´Tom Cruise´ , Pais: ´Estados Unidos´ , Edad: ´60 años´ , Fecha de Nacimiento: "03/07/1962", Estatura: ´1.70 m´})
+CREATE (ee:Pelicula {Nombre: ´Top Gun´ , Año: ´2022´ , Genero: ´Accion/Aventura´})
+CREATE (ee:Pelicula {Nombre: ´Mision imposible´ , Año: ´2018´ , Genero: ´Accion/Suspenso´})
+CREATE (ee:Pelicula {Nombre: ´La momia´ , Año: ´2017´ , Genero: ´Accion/Terror´})
+CREATE (ee:Pelicula {Nombre: ´Oblivion´ , Año: ´2013´ , Genero: ´Ciencia ficcion/Accion´})
+
 CREATE (ee:Actor {Nombre: ¨Anne Hathaway¨ , País: ¨Estados Unidos¨ , Edad: ¨40 años¨ , Fecha de Nacimiento: "12/10/1982" , Estatura: ¨1.73 m¨})
 CREATE (ee:Película {Nombre: ¨El diablo viste a la moda¨ , Año: ¨2006¨ , Género: ¨Comedia/Drama ¨})
 CREATE (ee:Película {Nombre: ¨El diario de la princesa¨ , Año: ¨2001¨ , Género: ¨Comedia/Infantil¨})
