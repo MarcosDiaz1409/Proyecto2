@@ -64,6 +64,14 @@ CREATE (ee:Película {Nombre: ¨Animales fantásticos ¨ , Año: ¨2016¨ , Gén
 CREATE (ee:Película {Nombre: ¨Alicia en el país de las maravillas¨ , Año: ¨2010¨ , Género: ¨Fantasía/Aventura¨})
 CREATE (ee:Película {Nombre: ¨Sombras tenebrosas¨ , Año: ¨2012¨ , Género: ¨Fantasía/Comedia¨})
 
+CREATE (ee:Actor {Nombre: ´Eugenio Derbez´ , Pais: ´Mexico´ , Edad: ´61 años´ , Fecha de Nacimiento: "02/09/1961", Estatura: ´1.79 m´})
+CREATE (ee:Pelicula {Nombre: ´No se aceptan devoluciones´ , Año: ´2013´ , Genero: ´Comedia/Drama´})
+CREATE (ee:Pelicula {Nombre: ´¡Hombre al agua!´ , Año: ´2018´ , Genero: ´Comedia/Comedia romántica´})
+CREATE (ee:Pelicula {Nombre: ´Como ser un Latin Lover´ , Año: ´2017´ , Genero: ´Comedia/Drama´})
+CREATE (ee:Pelicula {Nombre: ´Dora y la ciudad perdida´ , Año: ´2019´ , Genero: ´Aventura/Infantil ´})
+CREATE (ee:Pelicula {Nombre: ´Milagros del cielo´ , Año: ´2016´ , Genero: ´Drama/Infantil ´})
+CREATE (ee:Pelicula {Nombre: ´Shrek´ , Año: ´2001´ , Genero: ´Comedia/Fantasia´})
+
 CREATE (ee:Actor {Nombre: ¨Anne Hathaway¨ , País: ¨Estados Unidos¨ , Edad: ¨40 años¨ , Fecha de Nacimiento: "12/10/1982" , Estatura: ¨1.73 m¨})
 CREATE (ee:Película {Nombre: ¨El diablo viste a la moda¨ , Año: ¨2006¨ , Género: ¨Comedia/Drama ¨})
 CREATE (ee:Película {Nombre: ¨El diario de la princesa¨ , Año: ¨2001¨ , Género: ¨Comedia/Infantil¨})
