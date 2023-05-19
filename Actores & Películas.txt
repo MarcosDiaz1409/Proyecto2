@@ -108,3 +108,12 @@ CREATE (ee:Pelicula {Nombre: 'Spider-Man' , Año: '2021' , Genero: 'Accion/Avent
 CREATE (ee:Pelicula {Nombre: 'Duna' , Año: '2021' , Genero: 'Ciencia ficcion/Aventura'})
 CREATE (ee:Pelicula {Nombre: 'El gran showman' , Año: '2017' , Genero: 'Musical/Drama '})
 CREATE (ee:Pelicula {Nombre: 'A todo ritmo' , Año: '2010' , Genero: 'Comedia de situacion'})
+
+CREATE (ee:Actor {Nombre: 'Keanu Reeves' , Pais: 'Libano' , Edad: '58 ' , Fecha_de_Nacimiento: '02/09/1964' , Estatura: '1.86 m'})
+CREATE (ee:Pelicula {Nombre: 'Otro dia para matar' , Año: '2014' , Genero: 'Accion/Suspenso'})
+CREATE (ee:Pelicula {Nombre: 'John Wick' , Año: '2023' , Genero: 'Accion'})
+CREATE (ee:Pelicula {Nombre: 'Matrix' , Año: '1999' , Genero: 'Ciencia ficcion/Accion'})
+CREATE (ee:Pelicula {Nombre: 'Constantine' , Año: '2005' , Genero: 'Fantasia/Terror'})
+CREATE (ee:Pelicula {Nombre: 'El lado oscuro del deseo' , Año: '2015' , Genero: 'Suspenso/Terror'})
+CREATE (ee:Pelicula {Nombre: 'El abogado del diablo' , Año: '1997' , Genero: 'Suspenso/Terror'})
+CREATE (ee:Pelicula {Nombre: 'Siberia' , Año: '2018' , Genero: 'Suspenso/Crimen'})
