@@ -94,3 +94,10 @@ CREATE (ee:Pelicula {Nombre: 'Popular' , Año: '2020' , Genero: 'Drama/Comedia'}
 CREATE (ee:Pelicula {Nombre: 'Una razon para vivir' , Año: '2017' , Genero: 'Drama/Romance'})
 CREATE (ee:Pelicula {Nombre: 'Red Social' , Año: '2010' , Genero: 'Drama/Cine historico'})
 
+CREATE (ee:Actor {Nombre: 'Gal Gadot' , Pais: 'Israel' , Edad: '38 ' , Fecha_de_Nacimiento: '30/04/1985' , Estatura: '1.78 m'})
+CREATE (ee:Pelicula {Nombre: 'Mujer Maravilla' , Año: '2017' , Genero: 'Accion/Aventura '})
+CREATE (ee:Pelicula {Nombre: 'Alerta Roja' , Año: '2021' , Genero: 'Accion/Comedia'})
+CREATE (ee:Pelicula {Nombre: 'Muerte en el Nilo' , Año: '2022' , Genero: 'Misterio/Crimen'})
+CREATE (ee:Pelicula {Nombre: 'Rapidos y furiosos' , Año: '2009' , Genero: 'Accion/Suspenso'})
+CREATE (ee:Pelicula {Nombre: 'Liga de la justicia' , Año: '2017' , Genero: 'Accion/Aventura'})
+CREATE (ee:Pelicula {Nombre: 'Batman vs Superman' , Año: '2016' , Genero: 'Accion/Aventura'})
