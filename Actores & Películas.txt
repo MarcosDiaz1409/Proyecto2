@@ -101,3 +101,10 @@ CREATE (ee:Pelicula {Nombre: 'Muerte en el Nilo' , Año: '2022' , Genero: 'Miste
 CREATE (ee:Pelicula {Nombre: 'Rapidos y furiosos' , Año: '2009' , Genero: 'Accion/Suspenso'})
 CREATE (ee:Pelicula {Nombre: 'Liga de la justicia' , Año: '2017' , Genero: 'Accion/Aventura'})
 CREATE (ee:Pelicula {Nombre: 'Batman vs Superman' , Año: '2016' , Genero: 'Accion/Aventura'})
+
+CREATE (ee:Actor {Nombre: 'Zendaya Stoermer' , Pais: 'Estados Unidos' , Edad: '26 ' , Fecha_de_Nacimiento: '01/09/1996' , Estatura: '1.77 m'})
+CREATE (ee:Pelicula {Nombre: 'Euphoria' , Año: '2019' , Genero: 'Drama'})
+CREATE (ee:Pelicula {Nombre: 'Spider-Man' , Año: '2021' , Genero: 'Accion/Aventura'})
+CREATE (ee:Pelicula {Nombre: 'Duna' , Año: '2021' , Genero: 'Ciencia ficcion/Aventura'})
+CREATE (ee:Pelicula {Nombre: 'El gran showman' , Año: '2017' , Genero: 'Musical/Drama '})
+CREATE (ee:Pelicula {Nombre: 'A todo ritmo' , Año: '2010' , Genero: 'Comedia de situacion'})
