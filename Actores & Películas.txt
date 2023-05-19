@@ -133,3 +133,11 @@ CREATE (ee:Pelicula {Nombre: 'Crepusculo' , Año: '2011' , Genero: 'Romance/Fant
 CREATE (ee:Pelicula {Nombre: 'El faro' , Año: '2019' , Genero: 'Drama/Terror'})
 CREATE (ee:Pelicula {Nombre: 'Tenet' , Año: '2020' , Genero: 'Accion/Suspenso'})
 CREATE (ee:Pelicula {Nombre: 'Harry Potter y el caliz de fuego' , Año: '2005' , Genero: 'Fantasia/Aventura'})
+
+CREATE (ee:Actor {Nombre: 'Kristen Stewart' , Pais: 'Estados Unidos' , Edad: '33' , Fecha_de_Nacimiento: '09/04/19' , Estatura: '1.65 m'})
+CREATE (ee:Pelicula {Nombre: 'Crepusculo' , Año: '2011' , Genero: 'Romance/Fantasia'})
+CREATE (ee:Pelicula {Nombre: 'Spencer' , Año: '2021' , Genero: 'Drama/Cine historico'})
+CREATE (ee:Pelicula {Nombre: 'Blanca Nieves y El Cazador' , Año: '2012' , Genero: 'Fantasia/Aventura'})
+CREATE (ee:Pelicula {Nombre: 'Zathura - Una aventura espacial' , Año: '2005' , Genero: 'Aventura/Ciencia ficcion'})
+CREATE (ee:Pelicula {Nombre: 'Camp X-Ray' , Año: '2014' , Genero: 'Ciencia ficcion'})
+CREATE (ee:Pelicula {Nombre: 'Amenaza en lo profundo' , Año: '2020' , Genero: 'Terror/Ciencia ficción'})
