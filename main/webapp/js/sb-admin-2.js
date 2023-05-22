@@ -82,7 +82,7 @@
 		$.ajax( {
 			
 			type: "GET",
-			url: '/sec40Grupo2/HelloServlet/MoviesByActor?actor_name=' + $('#txt-actor').val(),
+			url: '/sec40Grupo2/MoviesByActor?actor_name=' + $('#txt-actor').val(),
 			success: function(data) {
 				//alert("Result" + data.resultado);
 			    var htmlMovieList = '<ul>';
@@ -105,7 +105,7 @@
 		$.ajax( {
 			
 			type: "GET",
-			url: '/sec40Grupo2/HelloServlet/SaveMovieServlet?title=' + $('#txt-movie-title').val() + '&release_year=' + $('#txt-movie-release').val() + '&tagline=' + $('#txt-movie-tagline').val() ,
+			url: '/sec40Grupo2/SaveMovieServlet?title=' + $('#txt-movie-title').val() + '&release_year=' + $('#txt-movie-release').val() + '&tagline=' + $('#txt-movie-tagline').val() ,
 			success: function(data) {
 			    alert("Resultado: " + data.resultado);
 			}
