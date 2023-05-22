@@ -92,7 +92,7 @@ CREATE (ee:Pelicula {Nombre: 'Alicia en el pais de las maravillas' , Año: '2010
 CREATE (ee:Pelicula {Nombre: 'El diario de la princesa ' , Año: '2004' , Genero: 'Romance/Comedia'})
 
 CREATE (ee:Actor {Nombre: 'Andrew Garfield' , Pais: 'Estados Unidos' , Edad: '39' , Fecha_de_Nacimiento: '20/08/1983' , Estatura: '1.79 m'})
-CREATE (ee:Pelicula {Nombre: 'Spider-Man' , Año: '2021' , Genero: ' Accion/Aventura'})
+CREATE (ee:Pelicula {Nombre: 'Spider-Man: sin camino a casa' , Año: '2021' , Genero: ' Accion/Aventura'})
 CREATE (ee:Pelicula {Nombre: 'Hasta el ultimo hombre' , Año: '2016' , Genero: 'Belico/Drama'})
 CREATE (ee:Pelicula {Nombre: 'Tick, Tick... Boom!' , Año: '2021' , Genero: 'Drama/Biografia'})
 CREATE (ee:Pelicula {Nombre: 'Popular' , Año: '2020' , Genero: 'Drama/Comedia'})
@@ -109,7 +109,7 @@ CREATE (ee:Pelicula {Nombre: 'Batman vs Superman' , Año: '2016' , Genero: 'Acci
 
 CREATE (ee:Actor {Nombre: 'Zendaya Stoermer' , Pais: 'Estados Unidos' , Edad: '26 ' , Fecha_de_Nacimiento: '01/09/1996' , Estatura: '1.77 m'})
 CREATE (ee:Pelicula {Nombre: 'Euphoria' , Año: '2019' , Genero: 'Drama'})
-CREATE (ee:Pelicula {Nombre: 'Spider-Man' , Año: '2021' , Genero: 'Accion/Aventura'})
+CREATE (ee:Pelicula {Nombre: 'Spider-Man: sin camino a casa' , Año: '2021' , Genero: 'Accion/Aventura'})
 CREATE (ee:Pelicula {Nombre: 'Duna' , Año: '2021' , Genero: 'Ciencia ficcion/Aventura'})
 CREATE (ee:Pelicula {Nombre: 'El gran showman' , Año: '2017' , Genero: 'Musical/Drama '})
 CREATE (ee:Pelicula {Nombre: 'A todo ritmo' , Año: '2010' , Genero: 'Comedia de situacion'})
@@ -122,6 +122,7 @@ CREATE (ee:Pelicula {Nombre: 'Constantine' , Año: '2005' , Genero: 'Fantasia/Te
 CREATE (ee:Pelicula {Nombre: 'El lado oscuro del deseo' , Año: '2015' , Genero: 'Suspenso/Terror'})
 CREATE (ee:Pelicula {Nombre: 'El abogado del diablo' , Año: '1997' , Genero: 'Suspenso/Terror'})
 CREATE (ee:Pelicula {Nombre: 'Siberia' , Año: '2018' , Genero: 'Suspenso/Crimen'})
+CREATE (ee:Pelicula {Nombre: 'Una mirada a la oscuridad' , Año: '2006' , Genero: 'Ciencia ficcion/Suspenso'})
 
 CREATE (ee:Actor {Nombre: 'Robert Downey Jr' , Pais: 'Estados Unidos' , Edad: '58' , Fecha_de_Nacimiento: '04/04/1965' , Estatura: '1.74 m'})
 CREATE (ee:Pelicula {Nombre: 'Sherlock Holmes' , Año: '2009' , Genero: 'Misterio/Misterio'})
