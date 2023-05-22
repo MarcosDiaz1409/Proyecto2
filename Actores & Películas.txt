@@ -5,6 +5,8 @@ CREATE (ee:Pelicula {Nombre: 'Enamorandome de mi Ex' , Año: '2009' , Genero: 'R
 CREATE (ee:Pelicula {Nombre: 'No miren arriba' , Año: '2021' , Genero: 'Comedia/Catastrofe'})
 CREATE (ee:Pelicula {Nombre: 'Julie & Julia' , Año: '2009' , Genero: 'Romance/Comedia'})
 CREATE (ee:Pelicula {Nombre: 'El regreso de Mary Poppins' , Año: '2018' , Genero: 'Fantasia/Infantil'})
+CREATE (ee:Pelicula {Nombre: 'En el bosque' , Año: '2014' , Genero: 'Musical/Fantasia'})
+CREATE (ee:Pelicula {Nombre: 'Leones por corderos' , Año: '2007' , Genero: 'Drama/Belico'})
 
 CREATE (ee:Actor {Nombre: 'Lily Collins' , Pais: 'Reino Unido' , Edad: '34' , Fecha_de_Nacimiento: '18/03/1989', Estatura: '1.65 m'})
 CREATE (ee:Pelicula {Nombre: 'Emily en Paris' , Año: '2020' , Genero: 'Romance'})
@@ -12,6 +14,7 @@ CREATE (ee:Pelicula {Nombre: 'Espejito espejito' , Año: '2012' , Genero: 'Fanta
 CREATE (ee:Pelicula {Nombre: 'Un sueño posible' , Año: '2009' , Genero: 'Deportes/Drama'})
 CREATE (ee:Pelicula {Nombre: 'Los imprevistos del amor' , Año: '2014' , Genero: 'Romance/Comedia'})
 CREATE (ee:Pelicula {Nombre: 'Un lugar para el amor' , Año: '2012' , Genero: 'Romance/Drama'})
+CREATE (ee:Pelicula {Nombre: 'To the Bone' , Año: '2017' , Genero: 'Drama/Comedia'})
 
 CREATE (ee:Actor {Nombre: 'James Mcavoy' , Pais: 'Reino Unido' , Edad: '44' , Fecha_de_Nacimiento: '21/04/1979', Estatura: '1.70 m'})
 CREATE (ee:Pelicula {Nombre: 'Fragmentado' , Año: '2016' , Genero: 'Suspenso/Terror'})
@@ -20,6 +23,7 @@ CREATE (ee:Pelicula {Nombre: 'X-Men' , Año: '2011' , Genero: 'Accion/Aventura'}
 CREATE (ee:Pelicula {Nombre: 'It' , Año: '2019' , Genero: 'Sobrenatural/Suspenso'})
 CREATE (ee:Pelicula {Nombre: 'Las cronicas de Narnia' , Año: '2005' , Genero: 'Fantasia/Aventura'})
 CREATE (ee:Pelicula {Nombre: 'Glass' , Año: '2019' , Genero: 'Suspenso/Drama'})
+CREATE (ee:Pelicula {Nombre: 'Amor verdadero' , Año: '2007' , Genero: 'Romance/Drama'})
 
 CREATE (ee:Actor {Nombre: 'Octavia Spencer' , Pais: 'Estados Unidos' , Edad: '52' , Fecha_de_Nacimiento: '25/05/1970', Estatura: '1.57 m'})
 CREATE (ee:Pelicula {Nombre: 'Historias cruzadas' , Año: '2011' , Genero: 'Drama/Cine historico'})
@@ -77,6 +81,7 @@ CREATE (ee:Pelicula {Nombre: 'Top Gun' , Año: '2022' , Genero: 'Accion/Aventura
 CREATE (ee:Pelicula {Nombre: 'Mision imposible' , Año: '2018' , Genero: 'Accion/Suspenso'})
 CREATE (ee:Pelicula {Nombre: 'La momia' , Año: '2017' , Genero: 'Accion/Terror'})
 CREATE (ee:Pelicula {Nombre: 'Oblivion' , Año: '2013' , Genero: 'Ciencia ficcion/Accion'})
+CREATE (ee:Pelicula {Nombre: 'Una guerra de pelicula' , Año: '2008' , Genero: 'Comedia/Accion'})
 
 CREATE (ee:Actor {Nombre: 'Anne Hathaway' , Pais: 'Estados Unidos' , Edad: '40' , Fecha_de_Nacimiento: '12/10/1982' , Estatura: '1.73 m'})
 CREATE (ee:Pelicula {Nombre: 'El diablo viste a la moda' , Año: '2006' , Genero: 'Comedia/Drama '})
