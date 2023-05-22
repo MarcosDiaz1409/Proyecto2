@@ -10,23 +10,22 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 import dataAccessLayer.EmbeddedNeo4j;
 
-import org.json.simple.JSONArray;
-
 /**
- * Servlet implementation class MoviesByActor
+ * Servlet implementation class SaveMovieServlet
  */
-@WebServlet("/MoviesByActor")
-public class MoviesByActor extends HttpServlet {
+@WebServlet("/SaveMovieServlet")
+public class SaveMovieServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public MoviesByActor() {
+    public SaveMovieServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -41,28 +40,26 @@ public class MoviesByActor extends HttpServlet {
 	 	response.setCharacterEncoding("UTF-8");
 	 	JSONObject myResponse = new JSONObject();
 	 	
-	 	JSONArray PeliculasActor = new JSONArray();
+	 	JSONArray insertionResult = new JSONArray();
 	 	
-	 	String myActor = request.getParameter("actor_name");
-	 	 try ( EmbeddedNeo4j greeter = new EmbeddedNeo4j( "bolt://54.88.141.199:7687", "neo4j", "moon-telecommunications-destroyers" ) )
+	 	String movieTitle = request.getParameter("title");
+	 	String releaseYear = request.getParameter("release_year");
+	 	String tagline = request.getParameter("tagline");
+	 	
+	 	 try ( EmbeddedNeo4j neo4jDriver = new EmbeddedNeo4j( "bolt://44.215.127.186:7687", "neo4j", "elapse-career-realignments" ) )
 	        {
-			 	LinkedList<String> myactors = greeter.getMoviesByActor(myActor);
-			 	
-			 	for (int i = 0; i < myactors.size(); i++) {
-			 		 //out.println( "<p>" + myactors.get(i) + "</p>" );
-			 		PeliculasActor.add(myactors.get(i));
-			 	}
+			 	String myResultTx = neo4jDriver.insertMovie(movieTitle, Integer.parseInt(releaseYear), tagline);
 	        	
+			 	myResponse.put("resultado", myResultTx);
 	        } catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
+				myResponse.put("resultado", "Error: " + e.getMessage());
 			}
 	 	
-	 	myResponse.put("conteo", PeliculasActor.size()); //Guardo la cantidad de actores
-	 	myResponse.put("peliculas", PeliculasActor);
-	 	out.println(myResponse);
-	 	out.flush();  
 	 	
+	 	out.println(myResponse);
+	 	out.flush();
 	}
 
 	/**
