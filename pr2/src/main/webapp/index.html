@@ -45,9 +45,7 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Buscar Peliculas por actor</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                        <h1 class="h3 mb-0 text-gray-800">Recomendaciones de películas</h1>
                     </div>
 
                     <!-- Actor Content Row -->
@@ -58,18 +56,10 @@
                     <div class="col-lg-4">
                         
                             <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">Search Actor</h1>
+                                <h1 class="h4 text-gray-900 mb-4">Bienvenido a nuestra página</h1>
                             </div>
 						<form class="user">
                                 
-                                    
-							<input type="text" class="form-control" id="txt-actor" placeholder="Actor Name">
-                                    
-                           	<br/>
-                                    
-							<input type="button" class="btn btn-primary form-control" id="btn-search-movies-by-actor" value="Buscar Peliculas de Actor">
-							
-							<br/>
 							<br/>
 							
 							<input type="button" class="btn btn-primary form-control" id="btn-search-actors" value="Ver actores">
@@ -89,7 +79,7 @@
                     <!--  End of Actor content row -->
 					
                     
-                     <!-- Content Row -->
+                     <!-- List Actor Content Row -->
                     <div class="row">
 
 
@@ -101,10 +91,51 @@
                     <div class="col-lg-4"></div>
 
                     </div>
-                    <!--  End content row -->
-					
+                    <!--  End of List Actor content row -->
 					
 					<!-- Movie Content Row -->
+                    <div class="row">
+
+
+					<div class="col-lg-4"></div>
+                    <div class="col-lg-4">
+                        
+						<form class="user">
+                                
+							<br/>
+							
+							<input type="button" class="btn btn-primary form-control" id="btn-search-movies" value="Ver peliculas">
+							
+							<br/>
+							
+							<hr>
+                                
+						</form>
+                            <hr>
+                            
+                        
+                    </div>
+                    <div class="col-lg-4"></div>
+
+                    </div>
+                    <!--  End of Movie content row -->
+					
+                    
+                     <!-- List Movie Content Row -->
+                    <div class="row">
+
+
+					<div class="col-lg-4"></div>
+                    <div class="col-lg-4" id="div-listado-peliculas">
+                            
+                        
+                    </div>
+                    <div class="col-lg-4"></div>
+
+                    </div>
+                    <!--  End List Movie content row -->
+					
+					<!-- Add Movie Content Row -->
 					<div class="row">
 
 
@@ -112,23 +143,23 @@
                     <div class="col-lg-4">
                         
                             <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">Insert New Movie</h1>
+                                <h1 class="h4 text-gray-900 mb-4">Ingresar nueva película</h1>
                             </div>
 						<form class="user">
                                 
                                     
-							<input type="text" class="form-control" id="txt-movie-title" placeholder="Title, ex. Titanic">
+							<input type="text" class="form-control" id="txt-movie-year" placeholder="Año de estreno, ej. 2012">
                                     
                            	<br/>
                                     
-							<input type="number" class="form-control" id="txt-movie-release_year" placeholder="Release year, ex. 1999">
+							<input type="number" class="form-control" id="txt-movie-genre" placeholder="Género ej. Accion/Ciencia ficcion">
 							<br/>
 							
-							<input type="text" class="form-control" id="txt-movie-tagline" placeholder="Description ex. Esta es una descripcion">
+							<input type="text" class="form-control" id="txt-movie-title" placeholder="Titulo, ej. Avengers">
                                     
                            	<br/>
 							
-							<input type="button" class="btn btn-primary form-control" id="btn-movie-insert" value="Insert Movie">
+							<input type="button" class="btn btn-primary form-control" id="btn-movie-insert" value="Añadir película">
 							
 							<br/>
 							
@@ -143,7 +174,103 @@
 
                     </div>
 				   
-                    <!--  End Movie content row -->
+                    <!--  End Add Movie content row -->
+					
+					<!-- Delete Movie Content Row -->
+					<div class="row">
+
+
+					<div class="col-lg-4"></div>
+                    <div class="col-lg-4">
+                        
+                            <div class="text-center">
+                                <h1 class="h4 text-gray-900 mb-4">Eliminar una película</h1>
+                            </div>
+						<form class="user">
+                                
+                                    
+							<input type="text" class="form-control" id="txt-dlt-movie-year" placeholder="Año de estreno, ej. 2017">
+                                    
+                           	<br/>
+                                    
+							<input type="number" class="form-control" id="txt-dlt-movie-genre" placeholder="Género ej. Accion">
+							<br/>
+							
+							<input type="text" class="form-control" id="txt-dlt-movie-title" placeholder="Titulo, ej. Rapidos y furiosos 8">
+                                    
+                           	<br/>
+							
+							<input type="button" class="btn btn-primary form-control" id="btn-movie-delete" value="Eliminar película">
+							
+							<br/>
+							
+							<hr>
+                                
+						</form>
+                            <hr>
+                            
+                        
+                    </div>
+                    <div class="col-lg-4"></div>
+
+                    </div>
+				   
+                    <!--  End Delete Movie content row -->
+					
+					<!-- Recommend Movie Content Row -->
+					<div class="row">
+
+
+					<div class="col-lg-4"></div>
+                    <div class="col-lg-4">
+                        
+                            <div class="text-center">
+                                <h1 class="h4 text-gray-900 mb-4">Recomendación de peliculas</h1>
+                            </div>
+						<form class="user">
+                                
+                                    
+							<input type="text" class="form-control" id="txt-rec-actor-name" placeholder="Nombre de actor, ej. Chris Pratt">
+                                    
+                           	<br/>
+                                    
+							<input type="number" class="form-control" id="txt-rec-movie-year" placeholder="Año ej. 2017">
+							<br/>
+							
+							<input type="text" class="form-control" id="txt-rec-movie-genre" placeholder="Género, ej. Comedia/Accion">
+                                    
+                           	<br/>
+							
+							<input type="button" class="btn btn-primary form-control" id="btn-movie-recommend" value="Recomendar peliculas">
+							
+							<br/>
+							
+							<hr>
+                                
+						</form>
+                            <hr>
+                            
+                        
+                    </div>
+                    <div class="col-lg-4"></div>
+
+                    </div>
+				   
+                    <!--  End Recommend Movie content row -->
+					
+					 <!-- List Recommend Movie Content Row -->
+                    <div class="row">
+
+
+					<div class="col-lg-4"></div>
+                    <div class="col-lg-4" id="div-listado-recomendaciones">
+                            
+                        
+                    </div>
+                    <div class="col-lg-4"></div>
+
+                    </div>
+                    <!--  End List Recommend Movie content row -->
 
                 </div>
                 <!-- /.container-fluid -->
@@ -155,7 +282,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
+                        <span>Copyright &copy; Algoritmo de recomendaciones 2023</span>
                     </div>
                 </div>
             </footer>
