@@ -60,7 +60,7 @@
 		$.ajax( {
 			
 			type: "GET",
-			url: '/sec40Grupo2/HelloServlet',
+			url: '/Proyecto2G2/HelloServlet',
 			success: function(data) {
 				//alert("Result" + data.resultado);
 			    var htmlActorsList = '<ul>';
