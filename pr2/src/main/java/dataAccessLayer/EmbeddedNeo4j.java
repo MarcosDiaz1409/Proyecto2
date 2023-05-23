@@ -99,7 +99,7 @@ public class EmbeddedNeo4j implements AutoCloseable{
                      LinkedList<String> mymovies = new LinkedList<String>();
                      List<Record> registros = result.list();
                      for (int i = 0; i < registros.size(); i++) {
-                    	 //myactors.add(registros.get(i).toString());
+                    	 //mymovies.add(registros.get(i).toString());
                     	 mymovies.add(registros.get(i).get("p.Nombre").asString());
                      }
                      

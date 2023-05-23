@@ -76,29 +76,6 @@
 		
 	});
 	
-  //Evento del botón que me devuelve el listado de peliculas
-  $("#btn-search-movies").click(function(){
-		//alert("The button was clicked 1");
-				
-		$.ajax( {
-			
-			type: "GET",
-			url: '/Proyecto2G2/MovieServlet',
-			success: function(data) {
-				//alert("Result" + data.resultado);
-			    var htmlMoviesList = '<ul>';
-				$.each(data.peliculas, function(i,item){
-					  htmlMoviesList += '<li>' + item + '</li>';
-				});
-				htmlMoviesList += '</ul>';
-				$('#div-listado-peliculas').html("");
-				$('#div-listado-peliculas').append(htmlMoviesList);
-			}
-		} );
-		
-		
-	});
-	
 	//Evento del botón que me devuelve el listado de películas de un determinado actor
 	$("#btn-search-movies-by-actor").click(function(){
 				
