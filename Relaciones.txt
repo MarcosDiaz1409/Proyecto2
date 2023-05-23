@@ -55,3 +55,65 @@ CREATE (n1)-[:Actua]->(n2)
 MATCH (n1:Actor), (n2:Pelicula)
 WHERE n1.Nombre = 'Lily Collins' AND n2.Nombre = 'To the Bone'
 CREATE (n1)-[:Actua]->(n2)
+
+---------------------------------------------------------------------------
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'James Mcavoy' AND n2.Nombre = 'Fragmentado'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'James Mcavoy' AND n2.Nombre = 'Expiacion, deseo y pecado'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'James Mcavoy' AND n2.Nombre = 'X-Men'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'James Mcavoy' AND n2.Nombre = 'It'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'James Mcavoy' AND n2.Nombre = 'Las cronicas de Narnia'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'James Mcavoy' AND n2.Nombre = 'Glass'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'James Mcavoy' AND n2.Nombre = 'Amor verdadero'
+CREATE (n1)-[:Actua]->(n2)
+
+---------------------------------------------------------------------------
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Octavia Spencer' AND n2.Nombre = 'Historias cruzadas'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Octavia Spencer' AND n2.Nombre = 'Talentos ocultos'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Octavia Spencer' AND n2.Nombre = 'Ma'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Octavia Spencer' AND n2.Nombre = 'La Cabaña'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Octavia Spencer' AND n2.Nombre = 'Un don excepcional'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Octavia Spencer' AND n2.Nombre = 'Insurgente'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Octavia Spencer' AND n2.Nombre = 'Donde el corazon te lleva'
+CREATE (n1)-[:Actua]->(n2)
+
+---------------------------------------------------------------------------
