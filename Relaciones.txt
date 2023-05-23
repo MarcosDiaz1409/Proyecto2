@@ -1,0 +1,57 @@
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Meryl Streep' AND n2.Nombre = 'El diablo viste a la moda'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Meryl Streep' AND n2.Nombre = 'Mamma Mia!'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Meryl Streep' AND n2.Nombre = 'Enamorandome de mi Ex'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Meryl Streep' AND n2.Nombre = 'No miren arriba'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Meryl Streep' AND n2.Nombre = 'Julie & Julia'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Meryl Streep' AND n2.Nombre = 'El regreso de Mary Poppins'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Meryl Streep' AND n2.Nombre = 'En el bosque'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Meryl Streep' AND n2.Nombre = 'Leones por corderos'
+CREATE (n1)-[:Actua]->(n2)
+
+---------------------------------------------------------------------------
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Lily Collins' AND n2.Nombre = 'Emily en Paris'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Lily Collins' AND n2.Nombre = 'Espejito espejito'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Lily Collins' AND n2.Nombre = 'Un sueño posible'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Lily Collins' AND n2.Nombre = 'Los imprevistos del amor'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Lily Collins' AND n2.Nombre = 'Un lugar para el amor'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Lily Collins' AND n2.Nombre = 'To the Bone'
+CREATE (n1)-[:Actua]->(n2)
