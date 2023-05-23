@@ -153,3 +153,26 @@ CREATE (ee:Pelicula {Nombre: 'Jurassic World' , Año: '2022' , Genero: 'Accion/C
 CREATE (ee:Pelicula {Nombre: 'El Hombre Araña 3' , Año: '2007' , Genero: 'Accion/Ciencia ficcion'})
 CREATE (ee:Pelicula {Nombre: 'Rocketman' , Año: '2019' , Genero: 'Musical/Drama'})
 CREATE (ee:Pelicula {Nombre: 'Mi amigo el dragon' , Año: '2016' , Genero: 'Fantasia/Aventura'})
+
+CREATE (ee:Actor {Nombre: 'Chris Pratt' , Pais: 'Estados Unidos' , Edad: '43' , Fecha_de_Nacimiento: '21/06/1979' , Estatura: '1.88 m'})
+CREATE (ee:Pelicula {Nombre: 'Super Mario Bros' , Año: '2023' , Genero: 'Aventura/Fantasia'})
+CREATE (ee:Pelicula {Nombre: 'Pasajeros' , Año: '2016' , Genero: 'Ciencia ficcion/Romance'})
+CREATE (ee:Pelicula {Nombre: 'The Tomorrow War' , Año: '2021' , Genero: 'Accion/Ciencia ficcion'})
+CREATE (ee:Pelicula {Nombre: 'Los siete magníficos' , Año: '2016' , Genero: 'Western/Accion'})
+CREATE (ee:Pelicula {Nombre: 'La Gran Aventura LEGO' , Año: '2014' , Genero: 'Infantil/Aventura'})
+
+CREATE (ee:Actor {Nombre: 'Salma Hayek' , Pais: 'Mexico' , Edad: '56' , Fecha_de_Nacimiento: '02/09/1966' , Estatura: '1.57 m'})
+CREATE (ee:Pelicula {Nombre: 'Magic Mike: el último baile' , Año: '2023' , Genero: 'Drama/Comedia'})
+CREATE (ee:Pelicula {Nombre: 'Duro de cuidar 2' , Año: '2021' , Genero: 'Acción/Comedia'})
+CREATE (ee:Pelicula {Nombre: 'Gato con Botas' , Año: '2011' , Genero: 'Infantil/Aventura'})
+CREATE (ee:Pelicula {Nombre: 'Eternals' , Año: '2021' , Genero: 'Accion/Fantasia'})
+CREATE (ee:Pelicula {Nombre: 'La casa Gucci' , Año: '2021' , Genero: 'Drama/Crimen'})
+CREATE (ee:Pelicula {Nombre: 'El maestro luchador' , Año: '2012' , Genero: 'Comedia/Accion'})
+
+CREATE (ee:Actor {Nombre: 'Luke Evans' , Pais: 'Reino Unido' , Edad: '44' , Fecha_de_Nacimiento: '15/04/1979' , Estatura: '1.83 m'})
+CREATE (ee:Pelicula {Nombre: 'Drácula' , Año: '2014' , Genero: 'Terror/Fantasia'})
+CREATE (ee:Pelicula {Nombre: 'La bella y la bestia' , Año: '2017' , Genero: 'Romance/Fantasia'})
+CREATE (ee:Pelicula {Nombre: 'Misterio a bordo' , Año: '2019' , Genero: 'Misterio/Comedia'})
+CREATE (ee:Pelicula {Nombre: 'El hobbit: la desolación de Smaug' , Año: '2013' , Genero: 'Aventura/Fantasia'})
+CREATE (ee:Pelicula {Nombre: 'Midway: batalla en el Pacífico' , Año: '2019' , Genero: 'Belico/Accion'})
+
