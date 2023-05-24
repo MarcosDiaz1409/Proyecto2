@@ -107,7 +107,7 @@
 		$.ajax( {
 			
 			type: "GET",
-			url: '/sec40Grupo2/SaveMovieServlet?title=' + $('#txt-movie-title').val() + '&release_year=' + $('#txt-movie-release_year').val() + '&tagline=' + $('#txt-movie-tagline').val() ,
+			url: '/Proyecto2G2/SaveMovieServlet?year=' + $('#txt-movie-year').val() + '&genre=' + $('#txt-movie-genre').val() + '&title=' + $('#txt-movie-title').val() ,
 			success: function(data) {
 			    alert("Resultado: " + data.resultado);
 			}
