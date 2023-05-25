@@ -115,5 +115,23 @@
 		
 		
 	});
+	
+	//Evento del botón que eliminara una pelicula
+	$("#btn-movie-delete").click(function(){
+		
+		//alert("Resultado: " + '/Grupo20/SaveMovieServlet?title=' + $('#txt-movie-title').val() + '&release_year=' + $('#txt-movie-release_year').val() + '&tagline=' + $('#txt-movie-tagline').val());
+				
+		$.ajax( {
+			
+			type: "GET",
+			url: '/Proyecto2G2/DeleteMovieServlet?title=' + $('#txt-dlt-movie-title').val(),
+			success: function(data) {
+			    alert("Resultado: " + data.resultado);
+			}
+		} );
+		
+		
+	});
+
 
 })(jQuery); // End of use strict

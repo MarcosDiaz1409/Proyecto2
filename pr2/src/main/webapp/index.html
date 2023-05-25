@@ -146,13 +146,7 @@
                                 <h1 class="h4 text-gray-900 mb-4">Eliminar una película</h1>
                             </div>
 						<form class="user">
-                                
-                                    
-							<input type="text" class="form-control" id="txt-dlt-movie-year" placeholder="Año de estreno, ej. 2017">
-                                    
-                           	<br/>
-                                    
-							<input type="number" class="form-control" id="txt-dlt-movie-genre" placeholder="Género ej. Accion">
+                               
 							<br/>
 							
 							<input type="text" class="form-control" id="txt-dlt-movie-title" placeholder="Titulo, ej. Rapidos y furiosos 8">
@@ -176,7 +170,7 @@
 				   
                     <!--  End Delete Movie content row -->
 					
-					<!-- Recommend Movie Content Row -->
+					<!-- Recommend Movie by Actor Content Row -->
 					<div class="row">
 
 
@@ -188,19 +182,64 @@
                             </div>
 						<form class="user">
                                 
+							<div class="text-center">
+                                <h1 class="h4 text-gray-900 mb-4">Por Actor: </h1>
+                            </div>
                                     
 							<input type="text" class="form-control" id="txt-rec-actor-name" placeholder="Nombre de actor, ej. Chris Pratt">
                                     
                            	<br/>
-                                    
-							<input type="number" class="form-control" id="txt-rec-movie-year" placeholder="Año ej. 2017">
+							
+							<br/>
+							
+							<input type="button" class="btn btn-primary form-control" id="btn-movie-recommend-actor" value="Recomendar">
+							
+							
+							<hr>
+                                
+						</form>
+                            <hr>
+                            
+                        
+                    </div>
+                    <div class="col-lg-4"></div>
+
+                    </div>
+				   
+                    <!--  End Recommend Movie by Actor content row -->
+					
+					 <!-- List Recommend Movie by Actor Content Row -->
+                    <div class="row">
+
+
+					<div class="col-lg-4"></div>
+                    <div class="col-lg-4" id="div-listado-recomendaciones-actor">
+                            
+                        
+                    </div>
+                    <div class="col-lg-4"></div>
+
+                    </div>
+                    <!--  End List Recommend Movie by Actor content row -->
+					
+					<!-- Recommend Movie by Genre Content Row -->
+					<div class="row">
+
+
+					<div class="col-lg-4"></div>
+                    <div class="col-lg-4">
+                                
+							<div class="text-center">
+                                <h1 class="h4 text-gray-900 mb-4">Por Género: </h1>
+                            </div>
+							
 							<br/>
 							
 							<input type="text" class="form-control" id="txt-rec-movie-genre" placeholder="Género, ej. Comedia/Accion">
                                     
                            	<br/>
 							
-							<input type="button" class="btn btn-primary form-control" id="btn-movie-recommend" value="Recomendar peliculas">
+							<input type="button" class="btn btn-primary form-control" id="btn-movie-recommend-genre" value="Recomendar">
 							
 							<br/>
 							
@@ -215,21 +254,21 @@
 
                     </div>
 				   
-                    <!--  End Recommend Movie content row -->
+                    <!--  End Recommend Movie by Genre content row -->
 					
-					 <!-- List Recommend Movie Content Row -->
+					<!-- List Recommend Movie by Genre Content Row -->
                     <div class="row">
 
 
 					<div class="col-lg-4"></div>
-                    <div class="col-lg-4" id="div-listado-recomendaciones">
+                    <div class="col-lg-4" id="div-listado-recomendaciones-genero">
                             
                         
                     </div>
                     <div class="col-lg-4"></div>
 
                     </div>
-                    <!--  End List Recommend Movie content row -->
+                    <!--  End List Recommend Movie by Genre content row -->
 
                 </div>
                 <!-- /.container-fluid -->

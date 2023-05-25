@@ -135,5 +135,29 @@ public class EmbeddedNeo4j implements AutoCloseable{
         	return e.getMessage();
         }
     }
+    
+    public String deleteMovie(String title) {
+    	try ( Session session = driver.session() )
+        {
+   		 
+   		 String result = session.writeTransaction( new TransactionWork<String>()
+   		 
+            {
+                @Override
+                public String execute( Transaction tx )
+                {
+                    //tx.run( "CREATE (Test:Pelicula {Año:'" + year + "', Genero:'"+ genre +"', Nombre:'"+ title +"'})");
+                    
+                    return "Pelicula eliminada!";
+                }
+            }
+   		 
+   		 );
+            
+            return result;
+        } catch (Exception e) {
+        	return e.getMessage();
+        }
+    }
 
 }
