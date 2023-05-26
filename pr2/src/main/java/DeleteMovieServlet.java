@@ -42,6 +42,22 @@ public class DeleteMovieServlet extends HttpServlet{
 			 	
 		JSONArray deleteResult = new JSONArray();
 		String title = request.getParameter("title");
+		
+		try ( EmbeddedNeo4j neo4jDriver = new EmbeddedNeo4j( "bolt://100.25.40.216:7687", "neo4j", "rice-secrets-place" ) )
+        {
+		 	String myResultTx = neo4jDriver.deleteMovie(title);
+        	
+		 	myResponse.put("resultado", myResultTx);
+        } catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			myResponse.put("resultado", "Error: " + e.getMessage());
+		}
+ 	
+ 	
+		out.println(myResponse);
+		out.flush();
+		
 	}
 	
 }

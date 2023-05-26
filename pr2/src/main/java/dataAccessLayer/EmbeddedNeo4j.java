@@ -146,7 +146,7 @@ public class EmbeddedNeo4j implements AutoCloseable{
                 @Override
                 public String execute( Transaction tx )
                 {
-                    //tx.run( "CREATE (Test:Pelicula {Año:'" + year + "', Genero:'"+ genre +"', Nombre:'"+ title +"'})");
+                    tx.run( "MATCH (p:Pelicula {Nombre:'"+ title +"'}) DELETE p");
                     
                     return "Pelicula eliminada!";
                 }
