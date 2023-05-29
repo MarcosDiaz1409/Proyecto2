@@ -75,14 +75,15 @@
 		
 		
 	});
+
 	
 	//Evento del botón que me devuelve el listado de películas de un determinado actor
-	$("#btn-search-movies-by-actor").click(function(){
+	$("#btn-movie-recommend-actor").click(function(){
 				
 		$.ajax( {
 			
 			type: "GET",
-			url: '/sec40Grupo2/MoviesByActor?actor_name=' + $('#txt-actor').val(),
+			url: '/sec40Grupo2/MoviesByActor?actor_name=' + $('#txt-rec-actor-name').val(),
 			success: function(data) {
 				//alert("Result" + data.resultado);
 			    var htmlMovieList = '<ul>';
@@ -90,8 +91,8 @@
 					  htmlMovieList += '<li>' + item + '</li>';
 				});
 				htmlMovieList += '</ul>';
-				$('#div-listado-actores').html("");
-				$('#div-listado-actores').append(htmlMovieList);
+				$('#div-listado-recomendaciones-actor').html("");
+				$('#div-listado-recomendaciones-actor').append(htmlMovieList);
 			}
 		} );
 		
