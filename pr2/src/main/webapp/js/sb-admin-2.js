@@ -83,7 +83,7 @@
 		$.ajax( {
 			
 			type: "GET",
-			url: '/sec40Grupo2/MoviesByActor?actor_name=' + $('#txt-rec-actor-name').val(),
+			url: '/Proyecto2G2/MoviesByActor?actor_name=' + $('#txt-rec-actor-name').val(),
 			success: function(data) {
 				//alert("Result" + data.resultado);
 			    var htmlMovieList = '<ul>';
@@ -99,6 +99,28 @@
 		
 	});
 	
+	//Evento del botón que me devuelve el listado de películas de un determinado genero
+	$("#btn-movie-recommend-genre").click(function(){
+				
+		$.ajax( {
+			
+			type: "GET",
+			url: '/Proyecto2G2/MoviesByGenre?genre=' + $('#txt-rec-movie-genre').val(),
+			success: function(data) {
+				//alert("Result" + data.resultado);
+			    var htmlGenreList = '<ul>';
+				$.each(data.generos, function(i,item){
+					  htmlGenreList += '<li>' + item + '</li>';
+				});
+				htmlGenreList += '</ul>';
+				$('#div-listado-recomendaciones-generos').html("");
+				$('#div-listado-recomendaciones-generos').append(htmlGenreList);
+			}
+		} );
+		
+		
+	});
+
 	
 	//Evento del botón que creara una nueva pelicula
 	$("#btn-movie-insert").click(function(){

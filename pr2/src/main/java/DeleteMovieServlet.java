@@ -43,7 +43,7 @@ public class DeleteMovieServlet extends HttpServlet{
 		JSONArray deleteResult = new JSONArray();
 		String title = request.getParameter("title");
 		
-		try ( EmbeddedNeo4j neo4jDriver = new EmbeddedNeo4j( "bolt://44.192.41.227:7687", "neo4j", "lookouts-frequencies-auditor" ) )
+		try ( EmbeddedNeo4j neo4jDriver = new EmbeddedNeo4j( "bolt://44.210.137.6:7687", "neo4j", "dares-brain-tar" ) )
         {
 		 	String myResultTx = neo4jDriver.deleteMovie(title);
         	
