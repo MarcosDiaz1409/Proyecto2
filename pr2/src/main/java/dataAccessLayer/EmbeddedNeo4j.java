@@ -68,12 +68,12 @@ public class EmbeddedNeo4j implements AutoCloseable{
                  @Override
                  public LinkedList<String> execute( Transaction tx )
                  {
-                     Result result = tx.run( "MATCH (people:Person) RETURN people.name");
+                     Result result = tx.run( "MATCH (a:Actor) RETURN a.Nombre");
                      LinkedList<String> myactors = new LinkedList<String>();
                      List<Record> registros = result.list();
                      for (int i = 0; i < registros.size(); i++) {
                     	 //myactors.add(registros.get(i).toString());
-                    	 myactors.add(registros.get(i).get("people.name").asString());
+                    	 myactors.add(registros.get(i).get("a.Nombre").asString());
                      }
                      
                      return myactors;
@@ -83,6 +83,7 @@ public class EmbeddedNeo4j implements AutoCloseable{
              return actors;
          }
     }
+    
     
     public LinkedList<String> getMoviesByActor(String actor)
     {
@@ -95,12 +96,13 @@ public class EmbeddedNeo4j implements AutoCloseable{
                 @Override
                 public LinkedList<String> execute( Transaction tx )
                 {
-                    Result result = tx.run( "MATCH (tom:Person {name: \"" + actor + "\"})-[:ACTED_IN]->(actorMovies) RETURN actorMovies.title");
+                    Result result = tx.run( "MATCH (tom:Actor {Nombre:'"+ actor +"'})-[:Actua]->(Pelicula) RETURN Pelicula.Nombre");
+                	//Result result = tx.run( "MATCH (a:Actor)-[Actua]->(p:Pelicula) WHERE a.Nombre = '"+ actor +"' RETURN p");
                     LinkedList<String> myactors = new LinkedList<String>();
                     List<Record> registros = result.list();
-                    for (int i = 0; i < registros.size(); i++) {
+                    for (int i = 0; i < registros.size(); i++) { 
                    	 //myactors.add(registros.get(i).toString());
-                   	 myactors.add(registros.get(i).get("actorMovies.title").asString());
+                   	 myactors.add(registros.get(i).get("Pelicula.Nombre").asString()); 
                     }
                     
                     return myactors;
@@ -111,7 +113,35 @@ public class EmbeddedNeo4j implements AutoCloseable{
         }
    }
     
-    public String insertMovie(String title, int releaseYear, String tagline) {
+    public LinkedList<String> getMoviesByGenre(String genre)
+    {
+   	 try ( Session session = driver.session() )
+        {
+   		 
+   		 
+   		 LinkedList<String> genres = session.readTransaction( new TransactionWork<LinkedList<String>>()
+            {
+                @Override
+                public LinkedList<String> execute( Transaction tx )
+                {
+                    Result result = tx.run( "MATCH (pelicula:Pelicula) WHERE pelicula.Genero = '" + genre + "' RETURN pelicula.Nombre");
+                	//Result result = tx.run( "MATCH (a:Actor)-[Actua]->(p:Pelicula) WHERE a.Nombre = '"+ actor +"' RETURN p");
+                    LinkedList<String> mygenres = new LinkedList<String>();
+                    List<Record> registros = result.list();
+                    for (int i = 0; i < registros.size(); i++) { 
+                   	 //myactors.add(registros.get(i).toString());
+                   	 mygenres.add(registros.get(i).get("pelicula.Nombre").asString()); 
+                    }
+                    
+                    return mygenres;
+                }
+            } );
+            
+            return genres;
+        }
+   }
+    
+    public String insertMovie(int year, String genre ,String title) {
     	try ( Session session = driver.session() )
         {
    		 
@@ -121,9 +151,33 @@ public class EmbeddedNeo4j implements AutoCloseable{
                 @Override
                 public String execute( Transaction tx )
                 {
-                    tx.run( "CREATE (Test:Movie {title:'" + title + "', released:"+ releaseYear +", tagline:'"+ tagline +"'})");
+                    tx.run( "CREATE (Test:Pelicula {Año:'" + year + "', Genero:'"+ genre +"', Nombre:'"+ title +"'})");
                     
-                    return "OK";
+                    return "Pelicula agregada!";
+                }
+            }
+   		 
+   		 );
+            
+            return result;
+        } catch (Exception e) {
+        	return e.getMessage();
+        }
+    }
+    
+    public String deleteMovie(String title) {
+    	try ( Session session = driver.session() )
+        {
+   		 
+   		 String result = session.writeTransaction( new TransactionWork<String>()
+   		 
+            {
+                @Override
+                public String execute( Transaction tx )
+                {
+                    tx.run( "MATCH (p:Pelicula {Nombre:'"+ title +"'}) DELETE p");
+                    
+                    return "Pelicula eliminada!";
                 }
             }
    		 

@@ -42,13 +42,13 @@ public class SaveMovieServlet extends HttpServlet {
 	 	
 	 	JSONArray insertionResult = new JSONArray();
 	 	
-	 	String movieTitle = request.getParameter("title");
-	 	String releaseYear = request.getParameter("release_year");
-	 	String tagline = request.getParameter("tagline");
+	 	String year = request.getParameter("year");
+	 	String genre = request.getParameter("genre");
+	 	String title = request.getParameter("title");
 	 	
-	 	 try ( EmbeddedNeo4j neo4jDriver = new EmbeddedNeo4j( "bolt://44.215.127.186:7687", "neo4j", "elapse-career-realignments" ) )
+	 	 try ( EmbeddedNeo4j neo4jDriver = new EmbeddedNeo4j( "bolt://44.210.137.6:7687", "neo4j", "dares-brain-tar" ) )
 	        {
-			 	String myResultTx = neo4jDriver.insertMovie(movieTitle, Integer.parseInt(releaseYear), tagline);
+			 	String myResultTx = neo4jDriver.insertMovie(Integer.parseInt(year), genre , title);
 	        	
 			 	myResponse.put("resultado", myResultTx);
 	        } catch (Exception e) {

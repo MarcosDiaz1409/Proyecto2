@@ -1,5 +1,3 @@
-
-
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.LinkedList;
@@ -17,21 +15,21 @@ import dataAccessLayer.EmbeddedNeo4j;
 import org.json.simple.JSONArray;
 
 /**
- * Servlet implementation class MoviesByActor
+ * Servlet implementation class MoviesByGenre
  */
-@WebServlet("/MoviesByActor")
-public class MoviesByActor extends HttpServlet {
+@WebServlet("/MoviesByGenre")
+public class MoviesByGenre extends HttpServlet{
 	private static final long serialVersionUID = 1L;
-       
+    
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public MoviesByActor() {
+    public MoviesByGenre() {
         super();
         // TODO Auto-generated constructor stub
     }
-
-	/**
+    
+    /**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -41,16 +39,17 @@ public class MoviesByActor extends HttpServlet {
 	 	response.setCharacterEncoding("UTF-8");
 	 	JSONObject myResponse = new JSONObject();
 	 	
-	 	JSONArray PeliculasActor = new JSONArray();
+	 	JSONArray PeliculasGenero = new JSONArray();
 	 	
-	 	String myActor = request.getParameter("actor_name");
+	 	String myGenre = request.getParameter("genre");
+	 	
 	 	 try ( EmbeddedNeo4j greeter = new EmbeddedNeo4j( "bolt://44.210.137.6:7687", "neo4j", "dares-brain-tar" ) )
 	        {
-			 	LinkedList<String> myactors = greeter.getMoviesByActor(myActor);
+			 	LinkedList<String> mygenres = greeter.getMoviesByGenre(myGenre);
 			 	
-			 	for (int i = 0; i < myactors.size(); i++) {
+			 	for (int i = 0; i < mygenres.size(); i++) {
 			 		 //out.println( "<p>" + myactors.get(i) + "</p>" );
-			 		PeliculasActor.add(myactors.get(i));
+			 		PeliculasGenero.add(mygenres.get(i));
 			 	}
 	        	
 	        } catch (Exception e) {
@@ -58,8 +57,8 @@ public class MoviesByActor extends HttpServlet {
 				e.printStackTrace();
 			}
 	 	
-	 	myResponse.put("conteo", PeliculasActor.size()); //Guardo la cantidad de actores
-	 	myResponse.put("peliculas", PeliculasActor);
+	 	myResponse.put("conteo", PeliculasGenero.size()); //Guardo la cantidad de actores
+	 	myResponse.put("generos", PeliculasGenero);
 	 	out.println(myResponse);
 	 	out.flush();  
 	 	
