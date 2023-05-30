@@ -117,3 +117,121 @@ WHERE n1.Nombre = 'Octavia Spencer' AND n2.Nombre = 'Donde el corazon te lleva'
 CREATE (n1)-[:Actua]->(n2)
 
 ---------------------------------------------------------------------------
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Vin Diesel' AND n2.Nombre = 'Rapidos y furiosos 7'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Vin Diesel' AND n2.Nombre = 'xXx: reactivado'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Vin Diesel' AND n2.Nombre = 'Riddick'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Vin Diesel' AND n2.Nombre = 'Guardianes de la Galaxia'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Vin Diesel' AND n2.Nombre = 'Niñera a prueba de balas'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Vin Diesel' AND n2.Nombre = 'Avengers''
+CREATE (n1)-[:Actua]->(n2)
+
+---------------------------------------------------------------------------
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Dwayne Jhonson' AND n2.Nombre = 'Black Adam'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Dwayne Jhonson' AND n2.Nombre = 'Jumanji'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Dwayne Jhonson' AND n2.Nombre = 'Rapidos y furiosos'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Dwayne Jhonson' AND n2.Nombre = 'Moana'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Dwayne Jhonson' AND n2.Nombre = 'Guardianes de la bahia'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Dwayne Jhonson' AND n2.Nombre = 'Terremoto: la falla de San Andres'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Dwayne Jhonson' AND n2.Nombre = 'Rascacielos'
+CREATE (n1)-[:Actua]->(n2)
+
+---------------------------------------------------------------------------
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Adam Sandler' AND n2.Nombre = 'Son como niños'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Adam Sandler' AND n2.Nombre = 'Misterio a bordo'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Adam Sandler' AND n2.Nombre = 'Una esposa de mentira'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Adam Sandler' AND n2.Nombre = 'Happy Gilmore'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Adam Sandler' AND n2.Nombre = 'omo si fuera la primera vez'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Adam Sandler' AND n2.Nombre = 'Click: Perdiendo el control'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Adam Sandler' AND n2.Nombre = 'Jack y Jill'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Adam Sandler' AND n2.Nombre = 'Misterio a bordo'
+CREATE (n1)-[:Actua]->(n2)
+
+---------------------------------------------------------------------------
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Jhonny Deep' AND n2.Nombre = 'Piratas del Caribe'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Jhonny Deep' AND n2.Nombre = 'Charlie y la fabrica de chocolate'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Jhonny Deep' AND n2.Nombre = 'El joven manos de tijera'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Jhonny Deep' AND n2.Nombre = 'Animales fantasticos'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Jhonny Deep' AND n2.Nombre = 'Alicia en el pais de las maravillas'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Jhonny Deep' AND n2.Nombre = 'Sombras tenebrosas'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Jhonny Deep' AND n2.Nombre = 'En el bosque'
+CREATE (n1)-[:Actua]->(n2)
