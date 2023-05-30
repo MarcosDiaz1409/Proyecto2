@@ -398,3 +398,244 @@ CREATE (n1)-[:Actua]->(n2)
 
 ---------------------------------------------------------------------------
 
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Keanu Reeves' AND n2.Nombre = 'Otro dia para matar'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Keanu Reeves' AND n2.Nombre = 'John Wick'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Keanu Reeves' AND n2.Nombre = 'Matrix'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Keanu Reeves' AND n2.Nombre = 'Constantine'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Keanu Reeves' AND n2.Nombre = 'El lado oscuro del deseo'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Keanu Reeves' AND n2.Nombre = 'El abogado del diablo'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Keanu Reeves' AND n2.Nombre = 'Siberia'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Keanu Reeves' AND n2.Nombre = 'To the Bone'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Keanu Reeves' AND n2.Nombre = 'Una mirada a la oscuridad'
+CREATE (n1)-[:Actua]->(n2)
+
+---------------------------------------------------------------------------
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Robert Downey Jr' AND n2.Nombre = 'Sherlock Holmes'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Robert Downey Jr' AND n2.Nombre = 'Iron Man: el hombre de hierro'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Robert Downey Jr' AND n2.Nombre = 'Avengers: Endgame'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Robert Downey Jr' AND n2.Nombre = 'Oppenheimer'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Robert Downey Jr' AND n2.Nombre = 'Dolittle'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Robert Downey Jr' AND n2.Nombre = 'Avengers'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Robert Downey Jr' AND n2.Nombre = 'Una mirada a la oscuridad'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Robert Downey Jr' AND n2.Nombre = 'Una guerra de pelicula'
+CREATE (n1)-[:Actua]->(n2)
+
+---------------------------------------------------------------------------
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Robert Pattinson' AND n2.Nombre = 'The Batman'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Robert Pattinson' AND n2.Nombre = 'Recuerdame'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Robert Pattinson' AND n2.Nombre = 'Crepusculo'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Robert Pattinson' AND n2.Nombre = 'El faro'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Robert Pattinson' AND n2.Nombre = 'Tenet'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Robert Pattinson' AND n2.Nombre = 'Harry Potter y el caliz de fuego'
+CREATE (n1)-[:Actua]->(n2)
+
+---------------------------------------------------------------------------
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Kristen Stewart' AND n2.Nombre = 'Crepusculo'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Kristen Stewart' AND n2.Nombre = 'Spencer'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Kristen Stewart' AND n2.Nombre = 'Blanca Nieves y El Cazador'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Kristen Stewart' AND n2.Nombre = 'Zathura - Una aventura espacial'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Kristen Stewart' AND n2.Nombre = 'Camp X-Ray'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Kristen Stewart' AND n2.Nombre = 'Amenaza en lo profundo'
+CREATE (n1)-[:Actua]->(n2)
+
+---------------------------------------------------------------------------
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Bryce Dallas Howard' AND n2.Nombre = 'Jurassic World'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Bryce Dallas Howard' AND n2.Nombre = 'El Hombre Araña 3'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Bryce Dallas Howard' AND n2.Nombre = 'Rocketman'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Bryce Dallas Howard' AND n2.Nombre = 'Mi amigo el dragon'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Bryce Dallas Howard' AND n2.Nombre = 'Crepusculo'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Bryce Dallas Howard' AND n2.Nombre = 'Historias cruzadas'
+CREATE (n1)-[:Actua]->(n2)
+
+---------------------------------------------------------------------------
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Chris Pratt' AND n2.Nombre = 'Jurassic World'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Chris Pratt' AND n2.Nombre = 'Super Mario Bros'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Chris Pratt' AND n2.Nombre = 'Pasajeros'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Chris Pratt' AND n2.Nombre = 'The Tomorrow War'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Chris Pratt' AND n2.Nombre = 'Los siete magníficos'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Chris Pratt' AND n2.Nombre = 'La Gran Aventura LEGO'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Chris Pratt' AND n2.Nombre = 'Guardianes de la Galaxia'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Chris Pratt' AND n2.Nombre = 'Avengers'
+CREATE (n1)-[:Actua]->(n2)
+
+---------------------------------------------------------------------------
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Salma Hayek' AND n2.Nombre = 'Magic Mike: el último baile'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Salma Hayek' AND n2.Nombre = 'Duro de cuidar 2'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Salma Hayek' AND n2.Nombre = 'Gato con Botas'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Salma Hayek' AND n2.Nombre = 'Eternals'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Salma Hayek' AND n2.Nombre = 'La casa Gucci'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Salma Hayek' AND n2.Nombre = 'El maestro luchador'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Salma Hayek' AND n2.Nombre = 'Son como niños'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Salma Hayek' AND n2.Nombre = 'Como ser un Latin Lover'
+CREATE (n1)-[:Actua]->(n2)
+
+---------------------------------------------------------------------------
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Luke Evans' AND n2.Nombre = 'Drácula'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Luke Evans' AND n2.Nombre = 'La bella y la bestia'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Luke Evans' AND n2.Nombre = 'Misterio a bordo'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Luke Evans' AND n2.Nombre = 'El hobbit: la desolación de Smaug'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Luke Evans' AND n2.Nombre = 'Midway: batalla en el Pacífico'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Luke Evans' AND n2.Nombre = 'Rapidos y furiosos'
+CREATE (n1)-[:Actua]->(n2)
