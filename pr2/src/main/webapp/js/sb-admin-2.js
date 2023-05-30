@@ -113,8 +113,8 @@
 					  htmlGenreList += '<li>' + item + '</li>';
 				});
 				htmlGenreList += '</ul>';
-				$('#div-listado-recomendaciones-generos').html("");
-				$('#div-listado-recomendaciones-generos').append(htmlGenreList);
+				$('#div-listado-recomendaciones-genero').html("");
+				$('#div-listado-recomendaciones-genero').append(htmlGenreList);
 			}
 		} );
 		
