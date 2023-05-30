@@ -235,3 +235,166 @@ CREATE (n1)-[:Actua]->(n2)
 MATCH (n1:Actor), (n2:Pelicula)
 WHERE n1.Nombre = 'Jhonny Deep' AND n2.Nombre = 'En el bosque'
 CREATE (n1)-[:Actua]->(n2)
+
+---------------------------------------------------------------------------
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Eugenio Derbez' AND n2.Nombre = 'No se aceptan devoluciones'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Eugenio Derbez' AND n2.Nombre = '¡Hombre al agua!'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Eugenio Derbez' AND n2.Nombre = 'Como ser un Latin Lover'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Eugenio Derbez' AND n2.Nombre = 'Dora y la ciudad perdida'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Eugenio Derbez' AND n2.Nombre = 'Milagros del cielo'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Eugenio Derbez' AND n2.Nombre = 'Shrek'
+CREATE (n1)-[:Actua]->(n2)
+
+---------------------------------------------------------------------------
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Tom Cruise' AND n2.Nombre = 'Top Gun'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Tom Cruise' AND n2.Nombre = 'Mision imposible'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Tom Cruise' AND n2.Nombre = 'La momia'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Tom Cruise' AND n2.Nombre = 'Oblivion'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Tom Cruise' AND n2.Nombre = 'Leones por corderos'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Tom Cruise' AND n2.Nombre = 'Una guerra de pelicula'
+CREATE (n1)-[:Actua]->(n2)
+
+---------------------------------------------------------------------------
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Anne Hathaway' AND n2.Nombre = 'El diablo viste a la moda'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Anne Hathaway' AND n2.Nombre = 'El diario de la princesa'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Anne Hathaway' AND n2.Nombre = 'De amor y otras adicciones'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Anne Hathaway' AND n2.Nombre = 'Interestelar'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Anne Hathaway' AND n2.Nombre = 'Alicia en el pais de las maravillas'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Anne Hathaway' AND n2.Nombre = 'Amor verdadero'
+CREATE (n1)-[:Actua]->(n2)
+
+---------------------------------------------------------------------------
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Andrew Garfield' AND n2.Nombre = 'Spider-Man: sin camino a casa'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Andrew Garfield' AND n2.Nombre = 'Hasta el ultimo hombre'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Andrew Garfield' AND n2.Nombre = 'Tick, Tick... Boom!'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Andrew Garfield' AND n2.Nombre = 'Popular'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Andrew Garfield' AND n2.Nombre = 'Una razon para vivir'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Andrew Garfield' AND n2.Nombre = 'Red Social'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Andrew Garfield' AND n2.Nombre = 'Leones por corderos'
+CREATE (n1)-[:Actua]->(n2)
+
+---------------------------------------------------------------------------
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Gal Gadot' AND n2.Nombre = 'Mujer Maravilla'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Gal Gadot' AND n2.Nombre = 'Alerta Roja'
+CREATE (n1)-[:Actua]->(n2)
+
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Gal Gadot' AND n2.Nombre = 'Muerte en el Nilo'
+CREATE (n1)-[:Actua]->(n2)
+
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Gal Gadot' AND n2.Nombre = 'Rapidos y furiosos'
+CREATE (n1)-[:Actua]->(n2)
+
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Gal Gadot' AND n2.Nombre = 'Liga de la justicia'
+CREATE (n1)-[:Actua]->(n2)
+
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Gal Gadot' AND n2.Nombre = 'Batman vs Superman'
+CREATE (n1)-[:Actua]->(n2)
+
+---------------------------------------------------------------------------
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Zendaya Stoermer' AND n2.Nombre = 'Euphoria'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Zendaya Stoermer' AND n2.Nombre = 'Spider-Man'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Zendaya Stoermer' AND n2.Nombre = 'Duna'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Zendaya Stoermer' AND n2.Nombre = 'El gran showman'
+CREATE (n1)-[:Actua]->(n2)
+
+MATCH (n1:Actor), (n2:Pelicula)
+WHERE n1.Nombre = 'Zendaya Stoermer' AND n2.Nombre = 'A todo ritmo'
+CREATE (n1)-[:Actua]->(n2)
+
+---------------------------------------------------------------------------
+
