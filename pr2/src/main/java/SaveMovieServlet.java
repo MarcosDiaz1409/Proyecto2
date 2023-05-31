@@ -46,7 +46,7 @@ public class SaveMovieServlet extends HttpServlet {
 	 	String genre = request.getParameter("genre");
 	 	String title = request.getParameter("title");
 	 	
-	 	 try ( EmbeddedNeo4j neo4jDriver = new EmbeddedNeo4j( "bolt://44.210.137.6:7687", "neo4j", "dares-brain-tar" ) )
+	 	 try ( EmbeddedNeo4j neo4jDriver = new EmbeddedNeo4j( "bolt://44.203.143.132:7687", "neo4j", "listings-struts-amplifier" ) )
 	        {
 			 	String myResultTx = neo4jDriver.insertMovie(Integer.parseInt(year), genre , title);
 	        	

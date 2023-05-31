@@ -75,6 +75,29 @@
 		
 		
 	});
+	
+	//Evento del botón que me devuelve el listado de generos
+  $("#btn-search-genres").click(function(){
+		//alert("The button was clicked 1");
+				
+		$.ajax( {
+			
+			type: "GET",
+			url: '/Proyecto2G2/GenreServlet',
+			success: function(data) {
+				//alert("Result" + data.resultado);
+			    var htmlGenresList = '<ul>';
+				$.each(data.generos, function(i,item){
+					  htmlGenresList += '<li>' + item + '</li>';
+				});
+				htmlGenresList += '</ul>';
+				$('#div-listado-generos').html("");
+				$('#div-listado-generos').append(htmlGenresList);
+			}
+		} );
+		
+		
+	});
 
 	
 	//Evento del botón que me devuelve el listado de películas de un determinado actor

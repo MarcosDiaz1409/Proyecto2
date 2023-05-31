@@ -43,7 +43,7 @@ public class MoviesByGenre extends HttpServlet{
 	 	
 	 	String myGenre = request.getParameter("genre");
 	 	
-	 	 try ( EmbeddedNeo4j greeter = new EmbeddedNeo4j( "bolt://44.210.137.6:7687", "neo4j", "dares-brain-tar" ) )
+	 	 try ( EmbeddedNeo4j greeter = new EmbeddedNeo4j( "bolt://44.203.143.132:7687", "neo4j", "listings-struts-amplifier" ) )
 	        {
 			 	LinkedList<String> mygenres = greeter.getMoviesByGenre(myGenre);
 			 	
